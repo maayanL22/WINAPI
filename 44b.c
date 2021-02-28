@@ -1,6 +1,6 @@
 #include <Windows.h>
 
-#define EXE_FILENAME "C:\\operatingsystems\\exercises\\44a\\Debug\\44a.exe"
+#define EXE_FILENAME // Add the path to where the exe file of the helloworld.c is stored
 #define PROCESS_ARG "4"
 
 /* This code uses winapi (through the Windows.h header) in order to create a process that runs an exe file supplied by us
