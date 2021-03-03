@@ -22,38 +22,10 @@ DWORD WINAPI bla(LPVOID lparam) {
 }
 
 
-int main1()
+int main()
 {
 	PVOID tid = NULL;
-	/*
-	struct MyStruct *my_struct =
-		(MyStruct*)malloc(sizeof(MyStruct));
-	my_struct->a = 3;
-	my_struct->b = 4;
-	my_struct->id = 1;
-	LPVOID pstruct = my_struct;
-	HANDLE hThread = CreateThread(
-		NULL, //default security attributes
-		0, //default stack size
-		bla, //thread function
-		pstruct, //thread param
-		0, //default creation flags
-		tid //return thread identifier
-	);
 
-	HANDLE hThread2 = CreateThread(
-		NULL, //default security attributes
-		0, //default stack size
-		bla, //thread function
-		pstruct, //thread param
-		0, //default creation flags
-		tid //return thread identifier
-	);
-	//printf(tid);
-	//HANDLE threads[] = { hThread, hThread2 };
-	//WaitForSingleObject(hThread, INFINITE);
-	//WaitForMultipleObjects(2, threads, FALSE, INFINITE);
-	*/
 	HANDLE threads[4] = {NULL, NULL, NULL, NULL};
 	struct MyStruct* structs[4] = { NULL, NULL, NULL, NULL };
 	LPVOID pstructs[4];
