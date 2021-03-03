@@ -16,7 +16,7 @@ DWORD WINAPI thread_func(LPVOID param) {
 	return 1;
 }
 
-int main2()
+int main()
 {
 	INT val = 0;
 	LPVOID param = &val;
