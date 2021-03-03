@@ -3,7 +3,7 @@
 #include <stdio.h>
 #define FILENAME "C:\\operatingsystems\\exercises\\gibrish.bin"
 
-int main1()
+int main()
 {
 	HANDLE hFile;
 	CHAR file_name[] = FILENAME;
